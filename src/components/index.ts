@@ -6,3 +6,4 @@ export * from './sharedComponents/Input/Input';
 export * from './FoodForm';
 export * from './Search';
 export * from './Nav';
+export * from './Uhome';

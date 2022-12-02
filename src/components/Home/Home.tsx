@@ -8,6 +8,7 @@ import userEvent from '@testing-library/user-event';
 import { GoogleButton } from '../SignIn/SignIn';
 import logo_image from '../../assets/images/DECIDE2.jpg'
 import { Nav } from "../Nav"
+import { Uhome } from "../Uhome"
 
 interface Props {
     title: string;
@@ -91,16 +92,17 @@ const Div = styled('div')({
 export const Home = ( props:Props) => {
  
     return (
-        <Root>
+        <>
             <Nav />
             <Main>
-                <MainText>
-                    <img src="../../assets/images/plantfood.jpeg" id="plant"></img>
+                <MainText>   
                     <h1>Sign In To Start Finding Your Favorite Foods!</h1>
-                    <br/>
-                    <h2>Then Go To Search & Add To Your Favorites!</h2>
                 </MainText>
-            </Main>  
-        </Root>
+            </Main>
+            <Div>
+                <Uhome/>
+            </Div>  
+            
+        </>
     )
 }
